@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af92bd94ce70840e4a275e31c9b25855, type: 3}
+  m_Name: Question 1
+  m_EditorClassIdentifier: 
+  question: "Freud, histerinin nedenlerine dair yapt\u0131\u011F\u0131 ara\u015Ft\u0131rmalar\u0131n
+    bulgular\u0131n\u0131, 21 Nisan 1896\u2019da, Viyana N\xF6ropsikiyatri Birli\u011Finin
+    d\xFCzenledi\u011Fi toplant\u0131da sunmu\u015Ftur. \u0130lk kez kamuoyunun kar\u015F\u0131s\u0131na
+    \xE7\u0131kan bu \xE7al\u0131\u015Fma \xE7ok tart\u0131\u015F\u0131lm\u0131\u015F
+    ve epeyce olumsuz ele\u015Ftiri alm\u0131\u015Ft\u0131r. Bu ele\u015Ftirilerden
+    biri \xE7a\u011F\u0131n otorite hekimlerinden olan Richard Kraft-Ebing\u2019e
+    aittir. Ebing, Freud\u2019un \xE7al\u0131\u015Fmas\u0131 i\xE7in bilimsel bir
+    peri masal\u0131 ifadesini kullanm\u0131\u015Ft\u0131r.\n\nBu par\xE7ada alt\u0131
+    \xE7izili s\xF6zle Freud\u2019un \xE7al\u0131\u015Fmas\u0131yla ilgili anlat\u0131lmak
+    istenen a\u015Fa\u011F\u0131dakilerin hangisi olamaz?"
+  answers:
+  - "Kan\u0131tlanmas\u0131 m\xFCmk\xFCn olmayan tespitler i\xE7ermesi"
+  - "Ger\xE7ek ile hayal\xEE olan\u0131 bir arada sunmas\u0131"
+  - "Elde edilen sonu\xE7lar\u0131n beklentinin \xFCzerinde \xE7\u0131kmas\u0131"
+  - "\u0130nand\u0131r\u0131c\u0131l\u0131ktan uzak akademik \xE7\u0131kar\u0131mlar
+    bar\u0131nd\u0131rmas\u0131"
+  - "Kesinli\u011Fiyle ilgili \u015F\xFCphe uyand\u0131ran yarg\u0131lar ta\u015F\u0131mas\u0131"
+  correctAnswerIndex: 2

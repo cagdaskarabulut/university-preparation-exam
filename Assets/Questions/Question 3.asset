@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af92bd94ce70840e4a275e31c9b25855, type: 3}
+  m_Name: Question 3
+  m_EditorClassIdentifier: 
+  question: " Eskiden Mezopotamya\u2019da hayati i\u015Flevler i\xE7in en gerekli
+    organ olarak g\xF6r\xFClen karaci\u011Ferin fal\u0131na bak\u0131l\u0131rm\u0131\u015F.\nBu
+    fal sayesinde gelecekte ya\u015Fanabilecek k\xF6t\xFC olaylar veya k\xF6t\xFC
+    ruhlar\u0131n sebep oldu\u011Fu hastal\u0131klar \xF6\u011Frenilirmi\u015F. Zarars\u0131z
+    ve psikolojik y\xF6nden etkili bir i\u015Flem olan karaci\u011Fer fal\u0131 antik
+    d\xFCnyada, ac\u0131 \xE7eken y\xFCz binlerce hastaya umut vererek yard\u0131mc\u0131
+    olmu\u015F. Karaci\u011Fer\nfal\u0131na bu kadar g\xFCvenilmesinin nedeni ise
+    o d\xF6nemde karaci\u011Ferin duygular\u0131n ve heyecan\u0131n merkezi, ruhun
+    bar\u0131na\u011F\u0131 olarak kabul edilmesiymi\u015F. Anadolu\u2019da halk
+    aras\u0131nda s\u0131k\xE7a kullan\u0131lan \u201Cci\u011Ferparem\u201D, \u201Cci\u011Ferimin
+    k\xF6\u015Fesi\u201D, \u201Cci\u011Feri be\u015F para etmez\u201D gibi deyimler
+    de asl\u0131nda o d\xF6nem inanc\u0131n\u0131n bir devam\u0131 niteli\u011Findeymi\u015F.
+    \xDCstelik bu inan\u0131\u015F sadece yak\u0131n co\u011Frafyay\u0131 etkilemekle
+    kalmam\u0131\u015F, \xF6rne\u011Fin Japonlar; birine cesur demek istediklerinde
+    \u201Ckimo ga futo\u201D yani karaci\u011Feri kuvvetli, \xF6fkeli demek istediklerinde
+    ise \u201Ckan huo\u201D yani yanmakta olan karaci\u011Fer ifadelerini kullanm\u0131\u015Flard\u0131r.\n\nBu
+    par\xE7ada karaci\u011Ferle ilgili a\u015Fa\u011F\u0131dakilerin hangisine de\u011Finilmemi\u015Ftir?"
+  answers:
+  - "\xDCzerine y\xFCklenen anlam\u0131n zamanla de\u011Fi\u015Fiklik g\xF6sterdi\u011Fine"
+  - "nsanlar taraf\u0131ndan biyolojik ve duygusal bir \xF6nem atfedildi\u011Fine"
+  - "\u0130nsanlar\u0131n ki\u015Filik \xF6zelliklerini betimlemek i\xE7in kullan\u0131ld\u0131\u011F\u0131na"
+  - "Farkl\u0131 dillerde duygularla ilgili s\xF6z kal\u0131plar\u0131n\u0131n i\xE7inde
+    yer ald\u0131\u011F\u0131na"
+  - "Olumsuz durumlar\u0131n ger\xE7ekle\u015Fmesiyle ilgili tahminlerde kullan\u0131ld\u0131\u011F\u0131na"
+  correctAnswerIndex: 0

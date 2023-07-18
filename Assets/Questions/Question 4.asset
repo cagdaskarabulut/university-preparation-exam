@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af92bd94ce70840e4a275e31c9b25855, type: 3}
+  m_Name: Question 4
+  m_EditorClassIdentifier: 
+  question: "Yarat\u0131c\u0131 yazarl\u0131k seminerine kat\u0131lan bir \xF6\u011Frenciden,
+    kahraman\u0131n ya\u015Fad\u0131\u011F\u0131 korkuyu konu alan bir \xF6yk\xFC
+    yazmas\u0131 istenince \xF6\u011Frenci \u015Fu c\xFCmleleri yazar:\n\u201CAhsen
+    kap\u0131ya do\u011Fru ko\u015Farken ard\u0131ndaki ki\u015Finin onu takip etti\u011Fini
+    i\u015Fitti. B\xFCt\xFCn v\xFCcudunu saran bir korkuyla \xFCrperdi. Kalbi h\u0131zla
+    \xE7arparken korkudan bay\u0131lacak gibi oldu.\u201D\n\xD6\u011Frenciye verilen
+    tavsiye: \u201C----.\u201D\nSemineri veren \xF6yk\xFCc\xFCn\xFCn tavsiyesinden
+    sonra \xF6\u011Frenci ayn\u0131 c\xFCmleleri a\u015Fa\u011F\u0131daki gibi de\u011Fi\u015Ftirir:\n\u201CAhsen
+    kap\u0131ya do\u011Fru ko\u015Farken ard\u0131ndaki ayak seslerini duydu. B\xFCt\xFCn
+    g\xF6vdesi kontrol\xFCn\xFC yitirmi\u015F bir yay gibi gerildi. Kalbi g\xF6\u011Fs\xFCne
+    s\u0131\u011Fm\u0131yor, g\xFC\xE7l\xFCkle soluk alabiliyordu.\u201D\n\nBu par\xE7adan
+    hareketle \xF6\u011Frenciye verilen tavsiye a\u015Fa\u011F\u0131dakilerin hangisi
+    olabilir?"
+  answers:
+  - "Mek\xE2n tasvirlerini, kahraman\u0131n duygular\u0131ndan daha \xF6n planda
+    tutarsan silik bir kalemden ibaret kal\u0131rs\u0131n"
+  - "\u0130nsanlar\u0131n duygular\u0131na dokunmak istiyorsan metinlerindeki kahramanlar\u0131n
+    ya\u015Fad\u0131klar\u0131 olaylara her an\u0131yla tan\u0131kl\u0131k etmelisin"
+  - "G\xFC\xE7l\xFC bir kalem olmak i\xE7in ay\u0131n parlad\u0131\u011F\u0131n\u0131
+    s\xF6ylemeden, k\u0131r\u0131k bir cam par\xE7as\u0131 \xFCzerindeki \u0131\u015F\u0131lt\u0131s\u0131n\u0131
+    g\xF6stermelisin"
+  - "\u0130nsan\u0131n ve insanl\u0131\u011F\u0131n temel duygular\u0131na, d\xFCrt\xFClerine
+    odaklanmak seni ba\u015Far\u0131ya g\xF6t\xFCrecek hareket noktalar\u0131ndan
+    biridir"
+  - "Kahraman\u0131n\u0131n duygular\u0131n\u0131 zaman ve mek\xE2nla b\xFCt\xFCnle\u015Ftirmelisin
+    ki o, ger\xE7ek d\xFCnyada bir yans\u0131maya d\xF6n\xFC\u015Fs\xFCn"
+  correctAnswerIndex: 2

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af92bd94ce70840e4a275e31c9b25855, type: 3}
+  m_Name: Question 5
+  m_EditorClassIdentifier: 
+  question: "Diderot, g\xFCzellik hakk\u0131nda yazarken \u201C\u0130nsanlar\naras\u0131nda
+    en \xE7ok konu\u015Fulan \u015Feyler, \xE7o\u011Fu zaman en az bilinenlerdir.\u201D
+    der. Ya\u015Fan\u0131lan tecr\xFCbeler Diderot\u2019yu hakl\u0131 \xE7\u0131karmaktad\u0131r.
+    \xC7\xFCnk\xFC hayat\u0131n her alan\u0131nda g\xFCzel kavram\u0131n\u0131 kullanmam\u0131za
+    ra\u011Fmen bir an durup bizzat \u201Cg\xFCzel\u201D \xFCzerine derinlemesine
+    d\xFC\u015F\xFCnd\xFC\u011F\xFCm\xFCzde afallar\u0131z.\n\nBu par\xE7ada anlat\u0131lmak
+    istenen a\u015Fa\u011F\u0131dakilerin hangisidir?"
+  answers:
+  - "Bir kavram\u0131 \xE7ok dillendirdi\u011Fimizde onu daha anla\u015F\u0131lmaz
+    bir h\xE2le getirdi\u011Fimizi fark ederiz."
+  - "S\u0131k kar\u015F\u0131la\u015Ft\u0131\u011F\u0131m\u0131z g\xFCndelik durumlar
+    hakk\u0131nda ba\u015Fkalar\u0131yla konu\u015Fmaktan ka\xE7\u0131n\u0131r\u0131z."
+  - "Somut kavramlardan ziyade soyut kavramlar\u0131 a\xE7\u0131klamaya \xE7al\u0131\u015F\u0131rken
+    zorlan\u0131r\u0131z."
+  - "G\xFCndelik hayatta s\u0131k\xE7a kulland\u0131\u011F\u0131m\u0131z kavramlar\u0131
+    tan\u0131mlamaya \xE7al\u0131\u015Ft\u0131\u011F\u0131m\u0131zda bocalar\u0131z."
+  - "Kendimizi ifade ederken genellikle ba\u015Fvurdu\u011Fumuz kavramlar\u0131n
+    zamanla silikle\u015Fti\u011Fini d\xFC\u015F\xFCn\xFCr\xFCz."
+  correctAnswerIndex: 3
