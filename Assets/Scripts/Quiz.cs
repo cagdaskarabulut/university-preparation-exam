@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
+    [Header("Admin Settings")]
+    [SerializeField] bool mixQuestions = true;
+
+    
     [Header("Questions")]
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] List<QuestionObject> questions = new List<QuestionObject>();
@@ -53,7 +57,14 @@ public class Quiz : MonoBehaviour
         {
             // SetButtonState(true);
             // SetDefaultButtonSprites();
-            GetRandomQuestion();
+            if (mixQuestions)
+            {
+                GetRandomQuestion();    
+            } else {
+                //TOOD: Change here
+                GetRandomQuestion();    
+            }
+            
             DisplayQuestion();
             // progressBar.value++;
             // scoreKeeper.IncrementQuestionsSeen();
