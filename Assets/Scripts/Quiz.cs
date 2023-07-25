@@ -6,31 +6,39 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
-    [Header("Admin Settings")]
-    [SerializeField] bool mixQuestions = true;
+  [Header("Admin Settings")]
+  [SerializeField] bool randomQuestions = false;
+  [SerializeField] bool checkAnswerLast = true;
+  [SerializeField] bool autoGetNextQuestion = true;
 
-    
-    [Header("Questions")]
-    [SerializeField] TextMeshProUGUI questionText;
-    [SerializeField] List<QuestionObject> questions = new List<QuestionObject>();
-    QuestionObject currentQuestion;
+  [Header("Questions")]
+  [SerializeField] TextMeshProUGUI questionText;
+  [SerializeField] List<QuestionObject> questions = new List<QuestionObject>();
+  int nextQuestionIndex = 0;
+  QuestionObject currentQuestion;
 
-    [Header("Answers")]
-    [SerializeField] GameObject[] answerButtons;
-    int correctAnswerIndex;
-    bool hasAnsweredEarly = true;
+  [Header("Answers")]
+  [SerializeField] GameObject[] answerButtons;
+  int correctAnswerIndex;
+  bool hasAnsweredEarly = true;
 
-    [Header("Button Colors")]
-    [SerializeField] Sprite defaultAnswerSprite;
-    [SerializeField] Sprite correctAnswerSprite;
+  [Header("Button Colors")]
+  [SerializeField] Sprite defaultAnswerSprite;
+  [SerializeField] Sprite correctAnswerSprite;
 
-    void Start(){
-        //questionText.text = "test";
-        GetNextQuestion();
-    }
+  int totalQuestionsCount = 0;
+  Dictionary<int, int> allAnswers; //questionIndex, resultIndex
+  int score = 0;
 
-    void Update()
-    {
+  void Start()
+  {
+    totalQuestionsCount = questions.Count;
+    allAnswers = new Dictionary<int, int>();
+    GetQuestion();
+  }
+
+  void Update()
+  {
     //    timerImage.fillAmount = timer.fillFraction;
     //     if (timer.loadNextQuestion)
     //     {
@@ -41,7 +49,7 @@ public class Quiz : MonoBehaviour
     //         }
 
     //         hasAnsweredEarly = false;
-    //         GetNextQuestion();
+    //         GetQuestion();
     //         timer.loadNextQuestion = false;
     //     }
     //     else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
@@ -49,74 +57,101 @@ public class Quiz : MonoBehaviour
     //         DisplayAnswer(-1);
     //         SetButtonState(false);
     //     }
-    }
+  }
 
-    void GetNextQuestion()
+  void GetQuestion()
+  {
+    if (questions.Count > 0)
     {
-        if (questions.Count > 0)
-        {
-            // SetButtonState(true);
-            // SetDefaultButtonSprites();
-            if (mixQuestions)
-            {
-                GetRandomQuestion();    
-            } else {
-                //TOOD: Change here
-                GetRandomQuestion();    
-            }
-            
-            DisplayQuestion();
-            // progressBar.value++;
-            // scoreKeeper.IncrementQuestionsSeen();
-        }
-    }
+      // SetButtonState(true);
+      // SetDefaultButtonSprites();
+      if (randomQuestions)
+      {
+        GetRandomQuestion();
+      }
+      else
+      {
+        GetNextQuestion();
+      }
 
-    private void GetRandomQuestion()
+      DisplayQuestion();
+      // progressBar.value++;
+      // scoreKeeper.IncrementQuestionsSeen();
+    }
+  }
+
+  private void GetNextQuestion()
+  {
+    currentQuestion = questions[nextQuestionIndex++];
+  }
+
+  private void GetPreviousQuestion()
+  {
+    nextQuestionIndex = nextQuestionIndex - 2;
+    currentQuestion = questions[nextQuestionIndex];
+  }
+
+  private void GetRandomQuestion()
+  {
+    int index = Random.Range(0, questions.Count);
+    currentQuestion = questions[index];
+    if (questions.Contains(currentQuestion))
     {
-        int index = Random.Range(0, questions.Count);
-        currentQuestion = questions[index];
-        if (questions.Contains(currentQuestion))
-        {
-            questions.Remove(currentQuestion);
-        }
+      questions.Remove(currentQuestion);
+    }
+  }
+
+  private void DisplayQuestion()
+  {
+
+    questionText.text = currentQuestion.GetQuestion();
+
+    for (int i = 0; i < answerButtons.Length; i++)
+    {
+      TextMeshProUGUI toggleText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+      toggleText.text = FindSelectionTitleByIndex(i) + currentQuestion.GetAnswer(i);
+    }
+  }
+
+  private string FindSelectionTitleByIndex(int index)
+  {
+    switch (index)
+    {
+      case 0:
+        return "A-) ";
+      case 1:
+        return "B-) ";
+      case 2:
+        return "C-) ";
+      case 3:
+        return "D-) ";
+      case 4:
+        return "E-) ";
+      default:
+        return "";
+    }
+  }
+
+  public void onAnswerSelected(int index)
+  {
+
+    allAnswers.Add(nextQuestionIndex - 1, index);
+
+    if (!checkAnswerLast)
+    {
+      if (index == currentQuestion.GetCorrectAnswerIndex())
+      {
+        score = score + ((1 / totalQuestionsCount) * 100);
+      }
     }
 
-    private void DisplayQuestion(){
-
-        questionText.text = currentQuestion.GetQuestion();
-    
-        for (int i = 0; i < answerButtons.Length; i++)
-        {
-            TextMeshProUGUI toggleText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-
-            //TODO DENEME Start 
-            // TextMeshProUGUI myButton = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            // TextMeshProUGUI myText = myButton.GetComponentInChildren<TextMeshProUGUI>();
-            // Debug.Log("item 1:"+test);
-            // Debug.Log("item 2:"+test.text);
-            // myText.text = FindSelectionTitleByIndex(i) + currentQuestion.GetAnswer(i);
-            //TODO DENEME End
-
-            toggleText.text = FindSelectionTitleByIndex(i) + currentQuestion.GetAnswer(i);
-        }
+    if (autoGetNextQuestion)
+    {
+      GetQuestion();
     }
-    
-    private string FindSelectionTitleByIndex(int index){
-        switch (index)
-        {
-            case 0:
-                return "A-) ";
-            case 1:
-                return "B-) ";
-            case 2:
-                return "C-) ";
-            case 3:
-                return "D-) ";
-            case 4:
-                return "E-) ";
-            default :
-                return "";
-        }
-    }
+
+  }
+
+
 
 }
