@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - QuestionText
+  - RoutingButtons
   layers:
   - Default
   - TransparentFX
